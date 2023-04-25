@@ -1,19 +1,22 @@
 //
 //  ContentView.swift
-//  GroupApp436
+//  SpotifyDatingApp
 //
-//  Created by Krish Pandya on 4/25/23.
+//  Created by Krish Pandya on 4/24/23.
 //
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
+    
+    @EnvironmentObject var spotifyAuthManager: SpotifyAuthManager
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            LoginView()
+
         }
         .padding()
     }
